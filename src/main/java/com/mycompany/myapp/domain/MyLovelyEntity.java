@@ -2,6 +2,7 @@ package com.mycompany.myapp.domain;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 
@@ -14,6 +15,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "my_lovely_entity")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+@Where(clause = "deleted=0")
 public class MyLovelyEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
