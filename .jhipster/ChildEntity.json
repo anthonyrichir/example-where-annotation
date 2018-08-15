@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "someField",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "deleted",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20180815093547",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "child_entity",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "exampleWhereAnnotation"
+}
